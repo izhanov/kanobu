@@ -19,19 +19,44 @@
     </h5>
   </div>
 
-  <div class="row">
-    <div class="col text-center g-4">
-      <%= image_tag("Rock.svg", size: '100x100') %>
+  <div class="row" data-controller="tool">
+    <div class="modal" tabindex="-1" data-tool-target="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="d-flex justify-content-center">
+              <h5 class="modal-title" data-tool-target="modal-title">
+                <%= t(".modal.title") %>
+              </h5>
+            </div>
+            <div class="container">
+              <div class="row m-4">
+                <div class="col text-center" data-tool-target="userChoise">
+                  <p class="m-2"><%= t(".modal.your_bet") %></p>
+                </div>
+                <div class="col text-center">
+                  <%= image_tag("loader.svg", size: '100x100') %>
+                  <%= image_tag("curb_logo.png", size: '75x23') %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col text-center g-4 tool" data-action="click->tool#choose" data-tool-target="rock">
+      <%= image_tag("rock.svg", size: '100x100') %>
       <p class="m-2"><%= t(".rock")%></p>
     </div>
 
-    <div class="col text-center g-4">
-      <%= image_tag("Paper.svg", size: '100x100') %>
+    <div class="col text-center g-4 tool" data-action="click->tool#choose" data-tool-target="paper">
+      <%= image_tag("paper.svg", size: '100x100') %>
       <p class="m-2"><%= t(".paper")%></p>
     </div>
 
-    <div class="col text-center g-4">
-      <%= image_tag("Scissors.svg", size: '100x100') %>
+    <div class="col text-center g-4 tool" data-action="click->tool#choose" data-tool-target="scissors">
+      <%= image_tag("scissors.svg", size: '100x100') %>
       <p class="m-2"><%= t(".scissors")%></p>
     </div>
   </div>

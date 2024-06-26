@@ -7,3 +7,6 @@ en:
       rock: "Rock"
       paper: "Paper"
       scissors: "Scissors"
+      modal:
+        title: "WAITING CURB’S CHOOSE"
+        your_bet: "Your bet"

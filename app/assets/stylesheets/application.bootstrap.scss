@@ -26,3 +26,12 @@
     }
   }
 }
+
+.tool {
+  cursor: pointer;
+  padding: 10px;
+
+  &:hover {
+    background-color: #F8F8F8;
+  }
+}
