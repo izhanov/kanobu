@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="d-flex justify-content-center m-4">
+    <h1 class="title__brand">
+      <%= t(".title") %>
+    </h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="d-flex justify-content-center m-4">
+    <article class="text-justify text--description__brand">
+      <%= t(".description") %>
+    </article>
+  </div>
+
+  <div class="d-flex justify-content-center m-4">
+    <h5 class="subtitle__brand">
+      <%= t(".subtitle") %>
+    </h5>
+  </div>
+
+  <div class="row">
+    <div class="col text-center g-4">
+      <%= image_tag("Rock.svg", size: '100x100') %>
+      <p class="m-2"><%= t(".rock")%></p>
+    </div>
+
+    <div class="col text-center g-4">
+      <%= image_tag("Paper.svg", size: '100x100') %>
+      <p class="m-2"><%= t(".paper")%></p>
+    </div>
+
+    <div class="col text-center g-4">
+      <%= image_tag("Scissors.svg", size: '100x100') %>
+      <p class="m-2"><%= t(".scissors")%></p>
+    </div>
+  </div>
+</div>
+
+

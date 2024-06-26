@@ -1,2 +1,28 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+
+.title {
+  &__brand {
+    font: normal normal medium 50px/61px Montserrat;
+    color: #36006C;
+  }
+}
+
+.subtitle {
+  &__brand {
+    font: normal normal medium 21px/25px Montserrat;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
+
+.text {
+  &--description {
+    &__brand {
+      font: normal normal 300 21px/32px Roboto;
+      color: #000000;
+      opacity: 0.54;
+    }
+  }
+}
