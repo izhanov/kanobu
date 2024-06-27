@@ -32,7 +32,7 @@ module Integrations
         end
 
         def fallback_throw
-          %w[rock paper scissors].sample
+          %w[rock paper scissors].shuffle.sample
         end
       end
     end

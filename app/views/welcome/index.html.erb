@@ -20,7 +20,7 @@
   </div>
 
   <div class="row" data-controller="tool">
-    <div class="modal" tabindex="-1" data-tool-target="modal">
+    <div class="modal" tabindex="-1" data-tool-target="waitingModal">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-body">
@@ -40,6 +40,27 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" data-tool-target="resultModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="d-flex flex-column align-items-center" data-tool-target="resultModalTitle">
+            </div>
+            <div class="container">
+              <div class="row m-4">
+                <div class="col text-center" data-tool-target="curbChoise">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
           </div>
         </div>
       </div>
