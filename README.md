@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Rock-Paper-Scissors web application. It is a simple game where the user can play against the Curb API. The user can choose between rock, paper, or scissors. The Curb API will randomly choose one of the three options. The user will then be able to see the result of the game.
 
-Things you may want to cover:
+## Usage
 
-* Ruby version
+To use this application, simply clone the repository and run the following command:
 
-* System dependencies
+```bash
+  git clone git@github.com:izhanov/kanobu.git
+```
 
-* Configuration
+Then, navigate to the root directory of the project and run the following command:
 
-* Database creation
+```bash
+  cd ~/Users/username/kanobu
+```
 
-* Database initialization
+Run the following command to start the server:
 
-* How to run the test suite
+```bash
+  bin/dev
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Navigate to `localhost:3000` in your browser to play the game.
 
-* Deployment instructions
-
-* ...
