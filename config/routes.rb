@@ -7,4 +7,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "welcome#index"
+
+  namespace :ajax do
+    namespace :curb do
+      resource :rps do
+        post :judge
+      end
+    end
+  end
 end

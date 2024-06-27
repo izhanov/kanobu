@@ -1,3 +1,3 @@
 integrations:
   curb:
-    url: 'http://localhost'
+    url: https://private-anon-d3132ba448-curbrockpaperscissors.apiary-mock.com/rps-stage/throw

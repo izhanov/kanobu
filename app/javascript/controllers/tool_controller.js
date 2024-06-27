@@ -13,8 +13,17 @@ export default class extends Controller {
     this.userChoiseTarget.prepend(img)
 
     const modal = new bootstrap.Modal(this.modalTarget, {backdrop: 'static'})
-
     modal.show()
+
+    const curbChoise = this.fetchCurbChoise(choise).then(
+      response => response.json()
+    ).then((data) => {
+        modal.hide()
+        this.userChoiseTarget.querySelector('img').remove()
+        console.log(data)
+      }
+    );
+
   }
 
 
@@ -35,5 +44,17 @@ export default class extends Controller {
     img.setAttribute("height", "100")
     img.src = src
     return img
+  }
+
+  fetchCurbChoise(userChoise) {
+    return fetch('/ajax/curb/rps/judge', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        user_bet: userChoise
+      })
+    })
   }
 }
