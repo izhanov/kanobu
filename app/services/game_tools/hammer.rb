@@ -3,7 +3,7 @@
 module GameTools
   class Hammer
     def to_s
-      "hammer"
+      self.class.name.split('::').last.downcase
     end
 
     def ==(other)
