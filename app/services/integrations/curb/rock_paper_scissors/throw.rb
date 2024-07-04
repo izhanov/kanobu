@@ -18,17 +18,21 @@ module Integrations
         private
 
         def conn
+          return @conn if defined?(@conn)
+
           options = {
             timeout: 2,
             open_timeout: 1,
             read_timeout: 1,
             write_timeout: 1
           }
-          Faraday.new() do |faraday|
+          @conn = Faraday.new() do |faraday|
             faraday.request :json
             faraday.response :json
             faraday.response :raise_error
           end
+
+          @conn
         end
 
         def fallback_throw
